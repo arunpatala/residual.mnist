@@ -14,8 +14,8 @@ local function convunit31(net,fin,half,str,nobatch)
     local str = str or 3
     local half = half or false
     if(half) then
-        convunit(net,fin,2*fin,3,2,nil,nobatch)
-    else convunit(net,fin,fin,3,1,nil,nobatch) end
+        convunit(net,fin,2*fin,str,2,nil,nobatch)
+    else convunit(net,fin,fin,str,1,nil,nobatch) end
 end
 local function convunit2(net,fin,half)
     local half = half or false
